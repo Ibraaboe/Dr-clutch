@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motory - Car Accessories</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Motory Logo" class="logo">
+        </header>
+        <h2 id="welcomeMessage">Welcome to Motory / مرحبًا بك في موتوري</h2>
+        <form id="contactForm">
+            <div class="form-step step-1 active">
+                <div class="form-pair">
+                    <label for="name">Name / الاسم:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-pair">
+                    <label for="number">Number / رقم الهاتف:</label>
+                    <input type="tel" id="number" name="number" required>
+                </div>
+                <button type="button" id="nextButton">Next / التالي</button>
+            </div>
+            <div class="form-step step-2">
+                <div class="form-pair">
+                    <label for="age">Age / العمر:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-pair">
+                    <label for="carBrand">Car Brand / ماركة السيارة:</label>
+                    <input type="text" id="carBrand" name="carBrand" required>
+                </div>
+                <div class="form-pair">
+                    <label for="carModel">Car Model / طراز السيارة:</label>
+                    <input type="text" id="carModel" name="carModel" required>
+                </div>
+                <div class="form-pair">
+                    <label for="year">Year of Manufacture / سنة الصنع:</label>
+                    <input type="number" id="year" name="year" required>
+                </div>
+                <button type="submit">Submit / إرسال</button>
+            </div>
+        </form>
+        <div id="thankYouMessage" class="hidden">
+            <p>Thank you! We will contact you as soon as possible. / شكرا لك! سوف نتصل بك في أقرب وقت ممكن.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
